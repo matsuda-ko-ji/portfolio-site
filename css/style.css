@@ -200,3 +200,21 @@ nav a:hover {
     border-radius: 4px;
     background-color: #f0f0f0;
 }
+
+.project-card .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 16px;
+}
+
+.project-card .tech-list li {
+    padding: 6px 12px;
+
+    background-color: #f8f9fa;
+    border: 1px solid #dddddd;
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+}
