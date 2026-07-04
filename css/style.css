@@ -249,3 +249,27 @@ nav a:hover {
     color: #999;
     cursor: not-allowed;
 }
+
+.tech-list {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech-list li {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    background-color: #f1f3f5;
+    color: #555;
+
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.tech-list li:hover {
+    background-color: #333;
+    color: #fff;
+}
