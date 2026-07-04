@@ -166,3 +166,25 @@ nav a:hover {
     border: 1px solid #dddddd;
     font-weight: bold;
 }
+
+/* ========================================
+   Projects
+======================================== */
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+.project-card {
+    max-width: 800px;
+    margin: 0 auto;
+
+    padding: 24px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
