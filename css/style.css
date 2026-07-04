@@ -77,7 +77,7 @@ nav ul {
 }
 
 nav a {
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 nav a:hover {
@@ -112,9 +112,28 @@ nav a:hover {
     color: #fff;
     border-radius: 6px;
 
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 #hero a:hover {
     opacity: 0.8;
+}
+
+/* ========================================
+   About
+======================================== */
+
+#about {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 2rem;
+}
+
+#about p {
+    margin-bottom: 16px;
 }
