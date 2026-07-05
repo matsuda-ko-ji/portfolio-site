@@ -55,17 +55,9 @@
             <h2 id="about-title">About</h2>
 
             <p>
-                はじめまして。松田です。
-            </p>
-
-            <p>
-                Webエンジニアとして、設計から品質を意識した
-                開発ができるエンジニアを目指しています。
-            </p>
-
-            <p>
-                現在はHTML、CSS、JavaScript、PHP、SQL、Git、GitHub、Javaを中心に学習し、
-                ポートフォリオ制作や個人開発を通して技術力を高めています。
+                はじめまして。松田です。<br>
+                Webエンジニアとして、設計から品質を意識した開発ができるエンジニアを目指しています。<br>
+                現在は、ポートフォリオ制作や資格学習を通して技術力を高めています。
             </p>
 
         </section>
@@ -87,54 +79,94 @@
 
         </section>
         <!-- Projects -->
-        <section id="projects" aria-labelledby="projects-title">
+        <div class="projects-list">
+            <section id="projects" aria-labelledby="projects-title">
 
-            <h2 id="projects-title">Projects</h2>
+                <h2 id="projects-title">Projects</h2>
+                <div class="projects-list">
+                <article class="project-card">
 
-            <article class="project-card">
+                    <h3>Portfolio Site</h3>
 
-                <h3>Portfolio Site</h3>
-
-                <img
-                    src="images/portfolio-thumbnail.png"
-                    alt="Portfolio Siteのスクリーンショット">
-
-                <p>
-                    制作しているポートフォリオサイトです。
-                    UIごとにコンポーネントを分割し、保守性を意識したCSS設計を行いながら、設計から実装までの変更履歴をGitHubで管理しています。
-                </p>
-
-                <ul class="tech-list">
-                    <li>HTML (Semantic)</li>
-                    <li>CSS (Design)</li>
-                    <li>JavaScript</li>
-                    <li>GitHub</li>
-                    <li>Git</li>
-                </ul>
-
-                <div class="project-links">
-                    <p>
-                        <a href="https://github.com/matsuda-ko-ji/portfolio-site"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn btn-primary">
-                            GitHub
-                        </a>
-                    </p>
+                    <img
+                        src="images/portfolio-thumbnail.png"
+                        alt="Portfolio Siteのスクリーンショット">
 
                     <p>
-                        <a href="#" 
-                            aria-disabled="true"
-                            class="btn btn-disabled">
-                            Demo
-                        </a>
+                        制作しているポートフォリオサイトです。
+                        UIごとにコンポーネントを分割し、保守性を意識したCSS設計を行いながら、設計から実装までの変更履歴をGitHubで管理しています。
                     </p>
-                </div>
 
-            </article>
+                    <ul class="tech-list">
+                        <li>HTML (Semantic)</li>
+                        <li>CSS (Design)</li>
+                        <li>JavaScript</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
+                    </ul>
 
-        </section>
+                    <div class="project-links">
+                        <p>
+                            <a href="https://github.com/matsuda-ko-ji/portfolio-site"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                GitHub
+                            </a>
+                        </p>
 
+                        <p>
+                            <a href="#" 
+                                aria-disabled="true"
+                                class="btn btn-disabled">
+                                Demo
+                            </a>
+                        </p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Password Generator</h3>
+
+                    <img
+                        src="images/password-generator-thumbnail.png"
+                        alt="Password Generatorのスクリーンショット">
+
+                    <p>
+                        条件を指定してパスワードを生成できるWebツールです。<br>
+                        状態管理と入力バリデーションを意識して設計しました。
+                    </p>
+
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
+                    </ul>
+                                    
+                    <div class="project-links">
+                        <p>
+                            <a href="https://github.com/matsuda-ko-ji/password-generator"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                GitHub
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="https://matsuda-ko-ji.github.io/password-generator/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn btn-primary">
+                                Demo
+                            </a>
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer>
