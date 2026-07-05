@@ -207,14 +207,11 @@ nav a:hover {
 
 .project-card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 
-    display: block;
-
-    margin: 16px 0;
-
-    border-radius: 4px;
-    background-color: #f0f0f0;
+    border-radius: 6px;
+    margin-bottom: 16px;
 }
 
 .project-card .tech-list {
