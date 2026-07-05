@@ -125,7 +125,7 @@ nav a:hover {
 
 #about {
     max-width: 800px;
-    margin:0 auto;
+    margin:0 auto 80px;
 }
 
 #about h2 {
@@ -188,14 +188,13 @@ nav a:hover {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 360px;
     max-width: 480px;
     margin: 0;
-
     padding: 24px;
-
     background-color: #ffffff;
-
     border: 1px solid #dddddd;
     border-radius: 8px;
 }
@@ -235,7 +234,7 @@ nav a:hover {
 .project-links {
     display: flex;
     gap: 12px;
-    margin-top: 24px;
+    margin-top: auto;
 }
 
 /* ボタン共通 */
@@ -264,7 +263,7 @@ nav a:hover {
 }
 
 .tech-list {
-    margin-top: 16px;
+    margin: 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
