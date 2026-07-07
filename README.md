@@ -12,6 +12,5 @@
 - CSS
 - JavaScript
 
-## 公開予定
-
-GitHub Pages
+## 公開URL
+https://matsuda-ko-ji.github.io/portfolio-site/
