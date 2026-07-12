@@ -4,23 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portfolio | 松田</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
 
     <!-- Header -->
     <header>
-        <nav>
-            <a href="#" class="logo">Portfolio</a>
+        <nav aria-label="メインナビゲーション">
+            <a href="#top" class="logo">Portfolio</a>
 
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://github.com/matsuda-ko-ji" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/matsuda-ko-ji"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -30,40 +44,43 @@
 
         <!-- Hero -->
         <section id="hero" aria-labelledby="hero-title">
-
             <h1 id="hero-title">松田</h1>
 
-            <p>Webエンジニアを目指しています。</p>
+            <p>Webエンジニアとして、保守性を意識した開発に取り組んでいます。</p>
 
             <p>
                 設計から品質を考え、
                 保守性の高いWebアプリケーション開発を学んでいます。
             </p>
 
-            <a href="#projects">作品を見る</a>
+            <div class="hero-links">
+                <a href="#projects" class="btn btn-primary">
+                    作品を見る
+                </a>
 
-            <a href="https://github.com/matsuda-ko-ji"
-               target="_blank"
-               rel="noopener noreferrer">
-                GitHubを見る
-            </a>
-
+                <a
+                    href="https://github.com/matsuda-ko-ji"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary">
+                    GitHubを見る
+                </a>
+            </div>
         </section>
+
         <!-- About -->
         <section id="about" aria-labelledby="about-title">
-
             <h2 id="about-title">About</h2>
 
             <p>
                 はじめまして。松田です。<br>
                 Webエンジニアとして、設計から品質を意識した開発ができるエンジニアを目指しています。<br>
-                現在は、ポートフォリオ制作や資格学習を通して技術力を高めています。
+                現在は、実務とポートフォリオ制作を通して技術力を高めています。
             </p>
-
         </section>
+
         <!-- Skills -->
         <section id="skills" aria-labelledby="skills-title">
-
             <h2 id="skills-title">Skills</h2>
 
             <ul>
@@ -71,122 +88,165 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>PHP</li>
+                <li>Symfony</li>
                 <li>SQL</li>
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>Java</li>
+                <li>Spring Boot</li>
             </ul>
-
         </section>
+
         <!-- Projects -->
-        <div class="projects-list">
-            <section id="projects" aria-labelledby="projects-title">
+        <section id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Projects</h2>
 
-                <h2 id="projects-title">Projects</h2>
-                <div class="projects-list">
+            <div class="projects-list">
+
+                <!-- Portfolio Site -->
                 <article class="project-card">
-
                     <h3>Portfolio Site</h3>
 
                     <img
                         src="images/portfolio-thumbnail.png"
-                        alt="Portfolio Siteのスクリーンショット">
+                        alt="Portfolio Siteのトップ画面">
 
                     <p>
-                        制作しているポートフォリオサイトです。
-                        UIごとにコンポーネントを分割し、保守性を意識したCSS設計を行いながら、設計から実装までの変更履歴をGitHubで管理しています。
-                    </p>
-
-                    <ul class="tech-list">
-                        <li>HTML (Semantic)</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>GitHub</li>
-                        <li>Git</li>
-                    </ul>
-
-                    <div class="project-links">
-                        <p>
-                            <a href="https://github.com/matsuda-ko-ji/portfolio-site"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary">
-                                GitHub
-                            </a>
-                        </p>
-
-                        <p>
-                            <a href="#" 
-                                aria-disabled="true"
-                                class="btn btn-disabled">
-                                Demo
-                            </a>
-                        </p>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <h3>Password Generator</h3>
-
-                    <img
-                        src="images/password-generator-thumbnail.png"
-                        alt="Password Generatorのスクリーンショット">
-
-                    <p>
-                        条件を指定してパスワードを生成できるWebツールです。<br>
-                        状態管理と入力バリデーションを意識して設計しました。
+                        制作した作品や使用技術を紹介するポートフォリオサイトです。
+                        セマンティックHTMLやレスポンシブ対応を意識し、
+                        設計から実装までの変更履歴をGitHubで管理しています。
                     </p>
 
                     <ul class="tech-list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
-                        <li>GitHub</li>
                         <li>Git</li>
+                        <li>GitHub</li>
                     </ul>
-                                    
-                    <div class="project-links">
-                        <p>
-                            <a href="https://github.com/matsuda-ko-ji/password-generator"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary">
-                                GitHub
-                            </a>
-                        </p>
 
-                        <p>
-                            <a href="https://matsuda-ko-ji.github.io/password-generator/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="btn btn-primary">
-                                Demo
-                            </a>
-                        </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/matsuda-ko-ji/portfolio-site"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://matsuda-ko-ji.github.io/portfolio-site/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            Demo
+                        </a>
                     </div>
                 </article>
-            </section>
-        </div>
+
+                <!-- Password Generator -->
+                <article class="project-card">
+                    <h3>Password Generator</h3>
+
+                    <img
+                        src="images/password-generator-thumbnail.png"
+                        alt="Password Generatorの操作画面">
+
+                    <p>
+                        文字数や文字種を指定してパスワードを生成できるWebツールです。
+                        入力値の検証やボタンの状態管理を意識して実装しました。
+                    </p>
+
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/matsuda-ko-ji/password-generator"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://matsuda-ko-ji.github.io/password-generator/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            Demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- JSON Formatter -->
+                <article class="project-card">
+                    <h3>JSON Formatter</h3>
+
+                    <img
+                        src="images/json-formatter-thumbnail.png"
+                        alt="JSON Formatterの操作画面">
+
+                    <p>
+                        入力したJSONを整形・圧縮できるWebツールです。
+                        JSON形式の検証、コピー、クリア機能を実装し、
+                        エラー表示やボタンの状態管理にも配慮しました。
+                    </p>
+
+                    <ul class="tech-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/matsuda-ko-ji/json-formatter"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://matsuda-ko-ji.github.io/json-formatter/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary">
+                            Demo
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
+        <p>
+            <a
+                href="https://github.com/matsuda-ko-ji"
+                target="_blank"
+                rel="noopener noreferrer">
+                GitHub
+            </a>
+        </p>
 
-    <p>
-        <a href="https://github.com/matsuda-ko-ji"
-           target="_blank"
-           rel="noopener noreferrer">
-            GitHub
-        </a>
-    </p>
-
-    <small>
-        &copy; 2026 松田. All Rights Reserved.
-    </small>
-
+        <small>
+            &copy; 2026 松田. All Rights Reserved.
+        </small>
     </footer>
 
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
